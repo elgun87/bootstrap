@@ -1,0 +1,107 @@
+body{
+    background: url('./imgs/ignasi_pattern_s.png');
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    height: 100vh;;
+}
+header {
+    background: white;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.navbar {
+    height: 100px;
+    padding: 0;
+    background: white !important;
+    
+}
+#logo {
+    height: 100%;
+    width: 200px;
+    padding: 20px;
+    box-sizing: border-box;
+    background: rgb(2, 155, 182);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+}
+button {
+    margin-right: 20px;
+}
+ul li+::after {
+    content: "";
+    border-left: 2px solid gray;
+    margin-left: 5px;
+}
+.nav-link {
+    display: inline-block;
+}
+
+
+
+.top {
+    margin-top: 130px;
+    height: auto;
+}
+.left {
+    background: white;
+    color: gray;
+    border-radius: 10px;
+    padding: 20px;
+}
+.left img {
+    float: left;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+.left > p {
+    margin-top: 20px;
+}
+
+.left h2 {
+    border-bottom: 2px solid gray;
+    padding-bottom: 20px;
+}
+
+
+
+
+
+.right {
+    height: 300px;
+    background: white;
+    padding: 20px;
+    color: gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 10px;
+}
+.right h2 {
+    border-bottom: 2px solid gray;
+    padding-bottom: 20px;
+}
+
+footer {
+    height: 100px;
+    width: 100%;
+    background: #666;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+@media screen and (max-width: 767px) {
+    .right {
+        margin-top: 30px;
+    }
+}
